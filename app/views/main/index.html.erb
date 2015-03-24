@@ -1,0 +1,52 @@
+<head>
+  <%= stylesheet_link_tag "main", media: "all" %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <div class="jumbotron">
+    <div class='navbar' id='search_main'>
+      <% @taxons = @taxon && @taxon.parent ? @taxon.parent.children : Spree::Taxon.roots %>
+      <%= form_tag spree.products_path, :method => :get, class: "navbar-form", id:'main_search' do %>
+        <div class="form-group">
+          <%= search_field_tag :keywords, params[:keywords], :placeholder => 'Search all of our products!', class: "form-control" %>
+        </div>
+        <%= submit_tag Spree.t(:search), :name => nil, class: "btn", id:'search_button' %>
+      <% end %>
+    </div> 
+    <h1>Kíchpan</h1>
+  </div>
+  <div class="row wrapper">
+    <% max_level = Spree::Config[:max_level_in_taxons_menu] || 1 %>
+    <nav id="taxonomies" data-hook>
+      <% @taxonomies.each do |taxonomy| %>
+        <% cache [I18n.locale, taxonomy, max_level] do %>
+         <div class="mid">
+          <h4 class='taxonomy-root'>
+            <%= Spree.t(:shop_by_taxonomy, :taxonomy => taxonomy.name) %>
+          </h4>
+          <% def seo_url(taxon)
+            return spree.nested_taxons_path(taxon.permalink)
+          end
+          def taxons_tree(root_taxon, current_taxon, max_level = 1)
+            return '' if max_level < 1 || root_taxon.children.empty?
+            content_tag :div, class: 'list-group  col-xs-12 col-sm-12 col-md-12' do
+              root_taxon.children.map do |taxon|
+                css_class = (current_taxon && current_taxon.self_and_ancestors.include?(taxon)) ? 'list-group-item active' : 'list-group-item' %>
+                    <div class="thumbnail">
+                        <%= link_to image_tag(taxon.icon.url(:my_size), :alt => taxon.name), seo_url(taxon) %>
+                        <h3 class="caption"><%=taxon.name%></h3>
+                        <a href="<%= seo_url(taxon) %>" class="btn" id='view_more' role="button">View More</a>
+                    </div>
+                <%link_to(taxon.icon, seo_url(taxon), class: css_class) + taxons_tree(taxon, current_taxon, max_level - 1)
+                  end.join("\n").html_safe
+              end
+            end %>
+            <div class='container-fluid row' id='categories'>
+            <%= taxons_tree(taxonomy.root, @taxon, max_level) %>
+            </div>
+        </div>
+        <% end %>
+      <% end %>
+    </nav>
+  </div>
+</body>

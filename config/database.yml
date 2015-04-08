@@ -42,5 +42,9 @@ test:
   production:
   <<: *default
   database: kichpan_production
+  username: deploy
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
 #  username: testapp
 #  password: <%= ENV['TESTAPP_DATABASE_PASSWORD'] %>

@@ -8,7 +8,6 @@ Deface::Override.new(
       					<div class='row'>
 		        			<a href='/'><h1 class='col-md-2 col-sm-2' id='main_logo'> Kíchpan </h1></a>
 		        			<div id='tabs' class='col-md-10 col-sm-10'>
-        						<%= render :partial => 'spree/shared/main_nav_bar' if store_menu? %>
         					</div>
 					    </div>
 					</div>
@@ -19,3 +18,5 @@ Deface::Override.new(
 			</div>",
 	:original => '870f2cc85da3717b7c721a3e99245cf65b607a19' 
 	)
+
+# <%= render :partial => 'spree/shared/main_nav_bar' if store_menu? %>

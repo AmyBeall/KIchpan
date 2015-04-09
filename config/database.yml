@@ -44,8 +44,7 @@ production:
   encoding: unicode
   database: kichpan_production
   pool: 5
-  host: localhost
-  # username: deploy
-  # password:
+  username: deploy
+  password:
 #  username: testapp
 #  password: <%= ENV['TESTAPP_DATABASE_PASSWORD'] %>

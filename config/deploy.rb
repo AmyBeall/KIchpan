@@ -6,7 +6,7 @@ set :repo_url, 'https://github.com/AmyBeall/Kichpan.git'
 set :deploy_to, '/opt/www/kichpan'
 set :user, 'deploy'
 set :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets}
-set :linked_dirs, %w(public/spree)
+# set :linked_dirs, %w(public/spree)
 
 namespace :deploy do
 

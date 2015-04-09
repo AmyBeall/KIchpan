@@ -23,7 +23,7 @@
 # production:
 #   <<: *default
 #   database: db/production.sqlite3
- development:
+development:
   adapter: postgresql
   encoding: unicode
   database: myspree_development
@@ -39,12 +39,13 @@ test:
   username: amybeall
   password:
 
-  production:
-  <<: *default
-  database: kichpan_production
-  username: deploy
+production:
   adapter: postgresql
   encoding: unicode
+  database: kichpan_production
   pool: 5
+  host: localhost
+  # username: deploy
+  # password:
 #  username: testapp
 #  password: <%= ENV['TESTAPP_DATABASE_PASSWORD'] %>

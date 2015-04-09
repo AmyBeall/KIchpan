@@ -11,9 +11,10 @@ Deface::Override.new(
         					</div>
 					    </div>
 					</div>
-  				</header>
-  				<div class='container'>
-    				<%= render :partial => 'spree/shared/nav_bar' %>
-  				</div>",
+  				</header>",
 	:original => '870f2cc85da3717b7c721a3e99245cf65b607a19' 
 	)
+
+# <div class='container'>
+#     				<%= render :partial => 'spree/shared/nav_bar' %>
+#   				</div>

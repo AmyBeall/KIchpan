@@ -14,4 +14,4 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-//= require boostrap
+//= require ./frontend/require bootstrap_frontend.css.scss

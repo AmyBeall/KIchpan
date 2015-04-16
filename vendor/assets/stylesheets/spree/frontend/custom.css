@@ -34,13 +34,13 @@ body{
 	text-decoration: none;
 }
 #search-bar{
-	min-width: 350px;
+	min-width: 300px;
 }
 #search_main_2{
 	padding-bottom: 10px;
 }
 #main_search_2{
-	min-width: 350px;
+	min-width: 300px;
 	text-align: center;
 	font-size: 14px;
 	color: lightgray;
@@ -54,4 +54,30 @@ div.form-group{
 #order_coupon_code{
 	width: 100px;
 	display: inline-block;
+}
+@media screen and (max-width: 375px) and (min-device-width: 322px){
+	*{
+		overflow-x: hidden;
+	}	
+  #search-bar{
+  	width: 360px;
+  }
+}
+@media screen and (max-width: 320px) and (min-device-width: 0px){
+	*{
+		overflow-x: hidden;
+	}	
+  .row{
+	width: 320px;
+  }
+  #main_search_2{
+  	width: 320px;
+  }
+  #search-bar{
+  	width: 320px;
+  	margin-left: -15px;
+  }
+  #search_button_2{
+  	margin-top: -40px;
+  }
 }

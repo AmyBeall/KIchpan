@@ -12,5 +12,5 @@
  *
  *= require_tree .
  *= require_self
- *= require bootstrap_frontend
+ *= require ./spree/frontend/bootstrap_frontend
  */

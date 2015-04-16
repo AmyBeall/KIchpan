@@ -157,6 +157,7 @@ div#product-price{
 }
 $icon-font-path: "../../bootstrap/";
 @import "bootstrap";
+@import "bootstrap-sprockets";
 
 // -- Spree Custom Header and Footer ---------------------
 #spree-header {

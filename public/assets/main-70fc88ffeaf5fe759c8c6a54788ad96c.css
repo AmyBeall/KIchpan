@@ -1,0 +1,146 @@
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans);
+/* line 2, /Users/amybeall/Desktop/e-commerce/myspree/app/assets/stylesheets/main.css.scss */
+.jumbotron {
+  background-image: url(/assets/mexico_de_raul.jpg);
+  background-size: cover;
+  height: 635px;
+  padding: 40px;
+  margin-bottom: 0px;
+}
+
+/* line 9, /Users/amybeall/Desktop/e-commerce/myspree/app/assets/stylesheets/main.css.scss */
+.jumbotron h1 {
+  padding-top: 60px;
+}
+
+/* line 12, /Users/amybeall/Desktop/e-commerce/myspree/app/assets/stylesheets/main.css.scss */
+div.container {
+  width: 100%;
+  text-align: center;
+}
+
+/* line 16, /Users/amybeall/Desktop/e-commerce/myspree/app/assets/stylesheets/main.css.scss */
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 22, /Users/amybeall/Desktop/e-commerce/myspree/app/assets/stylesheets/main.css.scss */
+.thumbnail a > img {
+  height: 100px !important;
+  width: 230px !important;
+}
+
+/* line 26, /Users/amybeall/Desktop/e-commerce/myspree/app/assets/stylesheets/main.css.scss */
+.thumbnail {
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  width: 200px;
+  height: 300px;
+  padding: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: none !important;
+  box-shadow: 2px 2px 0px 0px lightgray;
+  border-radius: 0px !important;
+}
+
+/* line 39, /Users/amybeall/Desktop/e-commerce/myspree/app/assets/stylesheets/main.css.scss */
+#categories {
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+/* line 47, /Users/amybeall/Desktop/e-commerce/myspree/app/assets/stylesheets/main.css.scss */
+.mid {
+  background-color: aqua;
+  margin-top: 0px;
+}
+
+/* line 51, /Users/amybeall/Desktop/e-commerce/myspree/app/assets/stylesheets/main.css.scss */
+.mid > h4 {
+  padding-top: 20px;
+  font-size: 24px;
+  color: black;
+  height: 70px;
+  width: 100%;
+  background-color: lightgray;
+  box-shadow: 0px 2px 2px 0px gray;
+  margin-top: 0px;
+  padding-left: 40px;
+}
+
+/* line 62, /Users/amybeall/Desktop/e-commerce/myspree/app/assets/stylesheets/main.css.scss */
+.caption {
+  height: 75px;
+}
+
+/* line 65, /Users/amybeall/Desktop/e-commerce/myspree/app/assets/stylesheets/main.css.scss */
+#view_more {
+  background-color: #E4007C;
+  border-color: #E4007C;
+  color: white !important;
+}
+
+/* line 70, /Users/amybeall/Desktop/e-commerce/myspree/app/assets/stylesheets/main.css.scss */
+#view_more:hover {
+  background-color: #E4007C;
+  border-color: #E4007C;
+}
+
+/* line 74, /Users/amybeall/Desktop/e-commerce/myspree/app/assets/stylesheets/main.css.scss */
+#search_main {
+  background-color: rgba(255, 255, 255, 0.75);
+  margin-top: -40px;
+  margin-right: -40px;
+  margin-left: -40px;
+  border-radius: .5px 0px;
+  width: 100%;
+  position: fixed;
+  text-align: center;
+  z-index: 2;
+}
+
+/* line 85, /Users/amybeall/Desktop/e-commerce/myspree/app/assets/stylesheets/main.css.scss */
+#main_search {
+  font-size: 14px;
+  color: lightgray;
+  font-weight: bold;
+}
+
+/* line 90, /Users/amybeall/Desktop/e-commerce/myspree/app/assets/stylesheets/main.css.scss */
+#main_search input {
+  text-align: center;
+}
+
+/* line 93, /Users/amybeall/Desktop/e-commerce/myspree/app/assets/stylesheets/main.css.scss */
+#search_button {
+  background-image: url(/assets/search_kiichpan.png);
+  background-color: transparent;
+  background-size: 38px;
+  margin-left: -10px;
+  margin-top: -10px;
+  background-repeat: no-repeat;
+  width: 35px;
+  color: transparent;
+  display: inline-block;
+}
+
+/* line 104, /Users/amybeall/Desktop/e-commerce/myspree/app/assets/stylesheets/main.css.scss */
+div.form-group {
+  width: 20%;
+  min-width: 250px;
+  display: inline-block;
+}
+
+/* line 109, /Users/amybeall/Desktop/e-commerce/myspree/app/assets/stylesheets/main.css.scss */
+.form-control {
+  font-size: 18px;
+}

@@ -12,5 +12,5 @@
  *
  *= require_tree .
  *= require_self
- *= ./frontend/require bootstrap_frontend.css.scss
+ *= require ./frontend/bootstrap_frontend.css.scss
  */

@@ -9,7 +9,7 @@ Deface::Override.new(
                   <div class='thumbnail products_page'>
                     <% cache(@taxon.present? ? [I18n.locale, current_currency, @taxon, product] : [I18n.locale, current_currency, product]) do %>
                         <div class='product-body'>
-                          <%= link_to product_image(product, itemprop: 'image'), url, itemprop: 'url' %><br/>
+                          <%= link_to product_image(product, itemprop: 'image'), url, itemprop: 'url' %>
                           <%= link_to truncate(product.name, length: 18), url, class:'caption', itemprop: 'name', title: product.name %>
                         </div>
                         <div class='panel-footer'>

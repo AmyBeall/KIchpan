@@ -38,6 +38,7 @@ body{
 	text-align: right !important;
 	margin-top: 40px;
 	width: 100%;
+	padding-bottom: 5px;
 }
 .hide_des {
 	position: absolute;

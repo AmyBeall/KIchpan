@@ -20,6 +20,9 @@ body{
 #cart-detail{
 	background-color: white;
 }
+#login{
+	background-color: #00EEEE;
+}
 #product-details{
 	background-color: #00EEEE;
 }
@@ -68,7 +71,6 @@ body{
 	text-align: center;
 	font-size: 14px;
 	color: lightgray;
-	font-weight: bold;
 	display: inline-block;
 }
 div.form-group{

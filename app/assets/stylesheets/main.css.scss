@@ -21,8 +21,8 @@ body {
   margin:0;
 }
 .thumbnail a > img {
-  height: 100px !important;
-  width: 230px !important;
+  height: 100px;
+  width: 200px;
 }
 .thumbnail {
   vertical-align: top;
@@ -30,7 +30,6 @@ body {
   text-align: center;
   width: 200px;
   height: 300px;
-  padding: 15px;
   margin-left: 5px;
   margin-right: 5px;
   border: none !important;

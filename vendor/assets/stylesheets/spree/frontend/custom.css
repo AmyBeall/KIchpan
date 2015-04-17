@@ -20,6 +20,15 @@ body{
 #cart-detail{
 	background-color: white;
 }
+#product-details{
+	background-color: #00EEEE;
+}
+#product-properties{
+	background-color: white;
+}
+#product-price{
+	margin-top: -10px;
+}
 .panel-footer {
 	background-color: white !important;
 	border-color: white !important;
@@ -27,15 +36,17 @@ body{
 	margin-top: 72px;
 	width: 100%;
 }
-.panel-footer p {
+.hide_des {
 	position: absolute;
 	padding: 10px;
 	margin-top: -100px;
-	width: 202px;
 	margin-left: -20px;
+	width: 202px;
+	height: 90px;
+	overflow: hidden;
 	background: rgba(0, 0, 0, 0.68);
 	text-align: left;
-	color: aqua;
+	color: #00EEEE;
 	visibility: hidden;
 	text-decoration: none;
 	transition: all 0.05s ease-in-out;

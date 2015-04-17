@@ -1,11 +1,24 @@
 @import url(http://fonts.googleapis.com/css?family=Josefin+Sans);
 body{
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: sans-serif;
+}
+#main_logo{
+  color: #E4007C;
+  font-size: 50px;
+  vertical-align: top;
+  margin-bottom: 0px;
+  font-family: 'Josefin Sans', sans-serif;
 }
 #default{
-	background-color: aqua;
+	background-color: #00EEEE;
 	margin-left: auto;
 	margin-right: auto;
+}
+#cart{
+	background-color: #00EEEE;
+}
+#cart-detail{
+	background-color: white;
 }
 .panel-footer {
 	background-color: white !important;
@@ -52,8 +65,15 @@ div.form-group{
 	display: inline-block;
 }
 #order_coupon_code{
-	width: 100px;
+	width: 110px;
+	margin-left: -5px;
+	margin-bottom: 5px;
 	display: inline-block;
+}
+#update-button{
+	background-color: white;
+	color: gray;
+	border-color: lightgray;
 }
 @media screen and (max-width: 375px) and (min-device-width: 322px){
 	*{

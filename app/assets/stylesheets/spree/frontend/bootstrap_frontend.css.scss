@@ -19,12 +19,6 @@ nav.pagination{
 #products_body{
   margin-bottom: 60px;
 }
-#main_logo{
-  color: #E4007C;
-  font-size: 50px;
-  vertical-align: top;
-  margin-bottom: 0px;
-}
 #products{
   margin-left: auto;
   margin-right: auto;
@@ -97,10 +91,11 @@ div.container{
 .well{
   background-color: lightgray !important;
 }
-.btn-primary{
-  background-color: #5ad75a !important;
-  border-color: #5ad75a !important;
-}
+/*.btn-primary{
+  background-color: white;
+  border-color: darkgray;
+  color: darkgray;
+}*/
 .btn-success{
   background-color: #E4007C !important;
   border-color: #E4007C !important;   
@@ -150,6 +145,9 @@ div#product-price{
 }
 #taxon-crumbs{
   display: none;
+}
+.taxon-title{
+  font-weight: bold;
 }
 .row{
   margin-left: 0px;

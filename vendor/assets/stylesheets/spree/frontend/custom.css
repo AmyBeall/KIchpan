@@ -36,16 +36,16 @@ body{
 	background-color: white !important;
 	border-color: white !important;
 	text-align: right !important;
-	margin-top: 22px;
+	margin-top: 37px;
 	width: 100%;
 }
 .hide_des {
 	position: absolute;
 	padding: 5px;
-	margin-top: -105px;
+	margin-top: -155px;
 	margin-left: -20px;
 	width: 202px;
-	height: 50px;
+	height: 60px;
 	overflow: hidden;
 	background: rgba(0, 0, 0, 0.68);
 	text-align: left;

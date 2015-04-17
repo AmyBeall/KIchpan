@@ -36,13 +36,13 @@ body{
 	background-color: white !important;
 	border-color: white !important;
 	text-align: right !important;
-	margin-top: 37px;
+	margin-top: 42px;
 	width: 100%;
 }
 .hide_des {
 	position: absolute;
 	padding: 5px;
-	margin-top: -70px;
+	margin-top: -62px;
 	margin-left: -20px;
 	width: 202px;
 	height: 60px;

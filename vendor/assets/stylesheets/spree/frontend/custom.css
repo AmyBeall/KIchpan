@@ -46,7 +46,7 @@ body{
 	margin-top: -75px;
 	margin-left: -20px;
 	width: 202px;
-	height: 62px;
+	height: 64px;
 	overflow: hidden;
 	background: rgba(0, 0, 0, 0.68);
 	text-align: left;
@@ -94,7 +94,7 @@ div.form-group{
 		overflow-x: hidden;
 	}	
   	#update-cart{
-  		overflow-x: scroll; 
+  		overflow-x: scroll !important; 
   	}
 }
 @media screen and (max-width: 375px) and (min-device-width: 322px){	
